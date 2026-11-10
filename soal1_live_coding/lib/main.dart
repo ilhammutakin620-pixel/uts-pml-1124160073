@@ -54,11 +54,13 @@ class ProfilePage extends StatelessWidget {
         child: SingleChildScrollView(
           padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 20.0),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              const CircleAvatar(
-                radius: 50,
-                child: Icon(Icons.person, size: 55),
+              const Center(
+                child: CircleAvatar(
+                  radius: 50,
+                  child: Icon(Icons.person, size: 55),
+                ),
               ),
               const SizedBox(height: 16),
               Text(
@@ -83,10 +85,105 @@ class ProfilePage extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 24),
+              Card(
+                elevation: 1,
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 8.0),
+                  child: Column(
+                    children: const [
+                      InfoTile(
+                        icon: Icons.email_outlined,
+                        label: 'Email',
+                        value: 'ilham@global.ac.id',
+                      ),
+                      Divider(height: 1),
+                      InfoTile(
+                        icon: Icons.phone_android_outlined,
+                        label: 'Nomor HP',
+                        value: '0812-3456-7890',
+                      ),
+                      Divider(height: 1),
+                      InfoTile(
+                        icon: Icons.school_outlined,
+                        label: 'Kelas',
+                        value: 'TI-2024-A',
+                      ),
+                      Divider(height: 1),
+                      InfoTile(
+                        icon: Icons.code_outlined,
+                        label: 'GitHub',
+                        value: 'github.com/ilhammutakin620-pixel',
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              const SizedBox(height: 16),
+              Card(
+                elevation: 1,
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 8.0),
+                  child: Column(
+                    children: const [
+                      InfoTile(
+                        icon: Icons.flutter_dash,
+                        label: 'Keahlian Utama',
+                        value: 'Flutter & Dart Basics',
+                      ),
+                      Divider(height: 1),
+                      InfoTile(
+                        icon: Icons.palette_outlined,
+                        label: 'Minat Desain',
+                        value: 'UI/UX Mobile Design',
+                      ),
+                      Divider(height: 1),
+                      InfoTile(
+                        icon: Icons.sports_esports_outlined,
+                        label: 'Hobi',
+                        value: 'Gaming & Membaca Buku',
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              const SizedBox(height: 70),
             ],
           ),
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(
+              content: Text('Terima kasih telah melihat profil saya'),
+              duration: Duration(seconds: 2),
+            ),
+          );
+        },
+        child: const Icon(Icons.thumb_up_outlined),
+      ),
+    );
+  }
+}
+
+class InfoTile extends StatelessWidget {
+  final IconData icon;
+  final String label;
+  final String value;
+
+  const InfoTile({
+    super.key,
+    required this.icon,
+    required this.label,
+    required this.value,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return ListTile(
+      leading: Icon(icon),
+      title: Text(label),
+      subtitle: Text(value),
     );
   }
 }
