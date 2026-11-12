@@ -36,6 +36,13 @@ android {
             signingConfig = signingConfigs.getByName("debug")
         }
     }
+
+    packaging {
+        jniLibs {
+            // Hindari kegagalan :app:stripReleaseDebugSymbols jika NDK tidak terpasang lengkap.
+            keepDebugSymbols.add("**/*.so")
+        }
+    }
 }
 
 kotlin {
