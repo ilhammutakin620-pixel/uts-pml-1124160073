@@ -18,11 +18,9 @@ Repository ini berisi hasil pengerjaan Ujian Tengah Semester (UTS) Ganjil Tahun 
 ---
 
 ## Link Penting
-
-- **Repository GitHub**: https://github.com/ilhammutakin620-pixel/uts-pml-1124160073
 - **Video Presentasi YouTube (5–10 menit)**: `[Tambahkan Link Video YouTube di sini]`
   - Judul Video: `UTS PML – Aplikasi Profil – Muhammad Ilham Muttaqim – 1124160073`
-- **APK Release (`v1.0.0`)**: [Download app-release.apk (v1.0.0)](https://github.com/ilhammutakin620-pixel/uts-pml-1124160073/releases/tag/v1.0.0)
+- **APK Release (`v1.0.0`)**: [Download app-release.apk (v1.0.0)]
 
 ---
 
@@ -99,7 +97,6 @@ cd soal2_profil_app
 flutter build apk --release
 ```
 
-File APK hasil build berada di `soal2_profil_app/build/app/outputs/flutter-apk/app-release.apk` *(tidak di-commit ke repository, diunggah ke GitHub Releases tag `v1.0.0`)*.
 
 ### 4. Menjalankan Soal 1 (`soal1_live_coding`)
 
@@ -113,12 +110,7 @@ flutter run
 
 ## Screenshot Aplikasi
 
-> Letakkan hasil tangkapan layar aplikasi dari HP/Emulator Android ke folder `screenshots/` lalu sesuaikan nama filenya jika diperlukan.
 
 | Login | Profil Mahasiswa | Edit Profil |
 | :---: | :---: | :---: |
-| ![Screenshot Login](screenshots/login.png) | ![Screenshot Profil](screenshots/profil.png) | ![Screenshot Edit Profil](screenshots/edit_profil.png) |
-
-| Tentang Saya | Mode Gelap |
-| :---: | :---: |
-| ![Screenshot Tentang Saya](screenshots/tentang_saya.png) | ![Screenshot Mode Gelap](screenshots/dark_mode.png) |
+| ![Screenshot Login](screenshots/Login.png) | ![Screenshot Profil](screenshots/Profil.png) | ![Screenshot Edit Profil](screenshots/Edit_Profil.png) |
