@@ -1,17 +1,29 @@
-# soal2_profil_app
+# Proyek Profil Mahasiswa (Soal 2)
 
-A new Flutter project.
+Aplikasi profil mahasiswa berbasis Flutter untuk tugas UTS Pemrograman Mobile Lanjutan.
 
-## Getting Started
+## Identitas Mahasiswa
+- **Nama**: Muhammad Ilham Muttaqim
+- **NIM**: 1124160073
+- **Kelas**: TI 24 P SE 1
+- **Program Studi**: Teknik Informatika
+- **Konsentrasi**: Software Engineering
 
-This project is a starting point for a Flutter application.
+## Daftar Fitur
+1. **Halaman Login**: Form validasi email dan password, toggle visibilitas password, indikator loading asynchronous, dan navigasi `pushReplacement`.
+2. **Halaman Profil**: Menampilkan foto profil dari assets (`assets/images/profile.jpg`) dengan `CircleAvatar`, ringkasan identitas, bio singkat, informasi akademik, dan kontak (`Card` + `InfoTile`).
+3. **Halaman Edit Profil**: Form otomatis terisi data awal (`TextEditingController`), validasi nama wajib diisi, email valid, nomor HP 10–13 digit angka, serta pengembalian data via `Navigator.pop(context, dataBaru)`.
+4. **Halaman Tentang Saya**: Menampilkan daftar keahlian, hobi, dan riwayat pendidikan menggunakan `ListView`.
+5. **Scaffold Lengkap**: Menggunakan `AppBar`, `Drawer`, `bottomNavigationBar` (`NavigationBar`), dan `FloatingActionButton`.
+6. **Tema Terang & Gelap**: Skema warna kustom (Teal & Slate) dengan tombol toggle mode gelap yang langsung mengubah `themeMode`.
+7. **Identitas Aplikasi Android**: Label aplikasi di Android diubah menjadi **Profil Ilham**.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Cara Menjalankan Aplikasi
+1. Mengambil dependensi:
+   ```bash
+   flutter pub get
+   ```
+2. Menjalankan di emulator / HP Android:
+   ```bash
+   flutter run
+   ```
