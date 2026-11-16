@@ -18,9 +18,11 @@ Repository ini berisi hasil pengerjaan Ujian Tengah Semester (UTS) Ganjil Tahun 
 ---
 
 ## Link Penting
-- **Video Presentasi YouTube (5–10 menit)**: `[Tambahkan Link Video YouTube di sini]`
+
+- **Repository GitHub**: https://github.com/ilhammutakin620-pixel/uts-pml-1124160073
+- **Video Presentasi YouTube (5–10 menit)**: [Tonton Video Presentasi (https://youtu.be/rVuxQ-Ur60U)](https://youtu.be/rVuxQ-Ur60U?si=RDa-TR4CiheOjSyW)
   - Judul Video: `UTS PML – Aplikasi Profil – Muhammad Ilham Muttaqim – 1124160073`
-- **APK Release (`v1.0.0`)**: [Download app-release.apk (v1.0.0)]
+- **APK Release (`v1.0.0`)**: [Download app-release.apk (v1.0.0)](https://github.com/ilhammutakin620-pixel/uts-pml-1124160073/releases/tag/v1.0.0)
 
 ---
 
